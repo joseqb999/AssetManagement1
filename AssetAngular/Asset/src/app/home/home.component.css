@@ -1,0 +1,152 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+  }
+
+.nav-item {
+    text-decoration: none;
+    color:inherit;
+    margin: 5px;
+    padding:5px;
+}
+
+.nav-item:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+  label{
+      padding-top: 5px;
+      color: black;
+  }
+
+  .form-select1{
+    height: 30px;
+     width: 45px;
+    
+  }
+  .Rowsperpage{
+    padding-left: 10px;
+}
+
+  span{
+      color: black;
+  }
+
+
+
+  .navbar-brand{
+    font-size: 35px;
+    
+  }
+
+  .col-sm-8{
+      font-size: 20px;
+  }
+
+  .form-select{
+       
+      
+    
+  }
+
+  .form-control{
+    
+  }
+
+  .row1{
+     
+    padding-top: 50px;
+      text-align: center;
+  }
+
+
+  .far {
+      padding: 15px;
+  }
+  .d-flex{
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+.menu-item {
+    display:flex ;
+     justify-content: center;
+
+
+}
+.menu-item > * {
+    margin: 5px;
+}
+
+
+
+.jumbotron{
+    padding-top: 100px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+
+}
+
+.page-link span {
+    color:#0d6efd;  
+}
+
+
+
+.search-box {
+   background-image: url('../../assets/img/search.png');
+   background-repeat: no-repeat;
+   background-position-y: 5px;
+   background-position-x: 5px;
+   background-size: 25px;
+   padding-left: 35px;
+}
+
+.row {
+    padding:0px 20px 0px 20px;
+}
+
+.pagination-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.pagination-item > * {
+    margin: 5px;
+}
+
+.actions{
+    white-space: nowrap; 
+}
+
+.modal {
+  
+
+}
+.modal-content {
+    display: flex;
+align-self: center;
+    width:95vw;
+    margin: 0px !important;
+    max-width:600px;
+  
+}
+
+a {
+    cursor: pointer;
+}
+.active-page {
+    background-color: rgba(53, 129, 216, 0.795);
+    color: white;
+}

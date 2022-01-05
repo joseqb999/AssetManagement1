@@ -1,0 +1,78 @@
+<form class="form-inline"  [formGroup]="AddEditForm" (ngSubmit)="onSubmit()">
+  <div class="flex-container">
+
+    <div class="">
+      <label for="name">Asset Name</label>
+      <input type="text" [required]="true"  class="form-control" id="name" formControlName="Name" autocomplete="off">
+  
+  {{msgInvalid}}
+      <!-- {{((AddEditForm.touched || AddEditForm.dirty)  && AddEditForm.invalid && AddEditForm.controls["Name"].invalid)?"Name is required":""}} -->
+    </div>
+
+    <div class="">
+        <label for="description">Manufacturer</label>
+        <select class="form-select" aria-label="Default select example" formControlName="ManuFactId">
+        <option selected [disabled]="true">Manufacturer</option>
+        <option *ngFor = "let m of manufacturers" value="{{m.manuFactId}}">{{m.name}}</option>
+        </select>
+        {{msgmanInvalid}}
+      </div>
+
+    </div>
+
+    <div class="flex-container">
+      <div class="">
+        <label for="description">Model</label>
+        <select class="form-select" aria-label="Default select example" formControlName="ModelId">
+            <option selected [disabled]="true">Model</option>
+            <option *ngFor = "let m of models" value="{{m.modelId}}">{{m.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description" formControlName="Description">
+      </div>
+    </div>
+
+    <div class="flex-container">
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" id="price" formControlName="Price">
+      </div>
+
+      <div class="">
+        <label for="description">Color</label>
+        <select class="form-select" aria-label="Default select example" formControlName="ColorId">
+            <option selected [disabled]="true">Color</option>
+            <option *ngFor = "let m of colors" value="{{m.colorId}}">{{m.name}}</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="flex-container">
+      <div class="form-group">
+        <label for="purchasedate">Purchase Date</label>
+        <input type="date" class="form-control" id="purchasedate" formControlName="PurchaseDate">
+      </div>
+
+
+    <div class="checkbox">
+      <label><input type="checkbox" formControlName="InUse"> In Use</label>
+    </div>
+  </div>
+	<div class="modal-footer">
+
+        <button type="button" class="btn btn-primary" (click)="cancelAddEdit()">
+            Cancel
+        </button>
+
+
+		<button type="submit" class="btn btn-primary">
+	Save
+		</button>
+	</div>
+
+  </form>
+
+
